@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="../BookStore_logo.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Đề cử  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+        integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid ">
+                <nav class="header__navbar ">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-iteam "><a class="header__navbar-link" href="../index.html">
+                                <i class="fa-solid fa-house"></i> Trang chủ</a>
+                        </li>
+                        <li class="header__navbar-iteam "><a class="header__navbar-link" href="../admin/admin_index.html">
+                                <i class="fa-solid fa-user-shield"></i> Quản lý</a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-link">
+                            <a href="" class="header__navbar-iteam"><i class="fa-solid fa-bell"></i> Thông báo</a>
+                        </li>
+                        <li class="header__navbar-iteam">
+                            <a href="" class="header__navbar-link"><i class="fa-solid fa-circle-question"></i> Trợ
+                                giúp</a>
+                        </li>
+                        <li id="register_login" class="header__navbar-iteam header__navbar-iteam--bold">
+                            <a class="header__navbar-link" id="js-Dangky_Dangnhap"><i
+                                    class="fa-solid fa-right-to-bracket"></i> Đăng ký/Đăng nhập</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__logo_search">
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img class="header__logo-img"
+                                src="BookStore_logo.png">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <input class="header__search--text" type="text" name="Timkiemtxt"
+                            placeholder="Bookstore - Chúng tôi ở đây để phục vụ bạn...">
+                        <button class="header__logo_search-button"><i
+                                class="header__logo_search-button-icon fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="header__shopping">
+                        <i class="header__shopping-gio fa-solid fa-cart-shopping fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="grid">
+                <div class="row">
+                    <div class="trangchu">
+                        <ul class="trangchu-chitiet">
+                            <li class="li"><a class="li-link" href="index.html"><i class="fa-solid fa-house"></i><b
+                                        class="btrangchu">Trang chủ &nbsp;</b> </a></li>
+                            <li class="li"><b style="color:rgb(8, 102, 253);"> >&nbsp; I'm Kinda Chubby and I'm Your Hero</b>
+                            </li>
+                            <li class="li"><a class="li-link" href=""> &nbsp; </a> </li>
+                        </ul>
+                    </div>
+                    <!-- bat dau -->
+                    <div class="container">
+                        <div class="row-heading">
+                          <ul class="col-xs-12 col-lg-12 pager">
+                           <li>
+                                <a href="#" class="button pre-button"><i class="fa-solid fa-chevron-left"></i> Chap trước</a>
+                            </li>
+                            <li>
+                                <a href="#danhsach" class="button pre-button"><i class="fa-solid fa-list"></i> Danh sách chap</a>
+                             </li>
+                            <li>
+                               <a href="#" class="button next-button">Chap sau <i class="fa-solid fa-chevron-right"></i></a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+             </div>
+           </div>
+        </div>
+         <!-- phan doc truyen -->
+         <div class="container-bao-anh">
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711876797_d13ef5c6053027debaf3756adf17648b.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711790585_d5550d92ed54e9d441d2a26d28888f54.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711876874_17fef4ad602902cc80ed8258702dadb5.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711872966_741c670bb62e9398c2c58e4eefabed65.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711873306_1636d2cd5cd4f863c121579d505043b8.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711873712_be85c02287f4ad40457cd65398b65a2c.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711873749_f651c1fdc11acab4e587cb989641d953.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711873849_e283023a8f34a88075a575c8c2e22678.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711873894_524a885e5198192653b524f9946bd238.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711873942_8d5361e215d1802205ad95f1e690c373.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711873975_0b7fa8740179e251fec810fbd6df530f.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874009_82531461974da5c7282edb70f021e7a4.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874046_95ff4ecc668ff09c6baba9ce60083a92.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874082_e478899b5e06f694dec37a33a5223fe8.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874121_ae0be9ff7a8fcf28e8b704ef92a6aece.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874174_98fdb8c875a1d7ef038fe598abae21d2.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874216_e959a1c151e4257756756c14d2c4200d.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874460_80b19e8d2d047b61222866b84b271e5e.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874502_0ac96b99089d2f73300467261bb5c6f2.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874534_115d31ea7ae4afb5bed8d4ec9b7a3aa6.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874574_1b44586d7e85ae2383a824381ef4d8ec.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874607_39e7e7464f7e67d54664750c73cca220.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874649_b02ba6f77a94725b5eeb48d8e7c92333.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874681_48b0d3c3de4944512d0e5d9bffed7585.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711875717_a3556f98079ea19714beabbcc9dd5028.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874743_a26bdfbfa639447dfdcf2e3f86e67f4e.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874791_b62a0485a7a0382d52bc16ae718f5111.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874821_e48bbd83aadd33368350d635850a51c5.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874848_de7f136ffd8a693cfde821e6d80c11fa.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711875927_92944a23f0dda3ccf32090550d5f2fee.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874914_0fbe07e70723412bf72c4d93ecb23118.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711874951_86a4e2053ab5c93825c2d1de1229d5a9.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711876188_5d2929929814cb9cba0c4f7558bc6fd5.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711875007_db31852e119ca32cff6f3ae5721d0a04.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711875035_26e9c48e27b8a4a2e1b9659297a0c3ef.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711875062_2effd4cf716f2b6dc17e66b484efd63f.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711876494_f25b2efc095abbb3ab2bdd5ab95b3b04.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711875112_ab678882ac5c4dddd65ebb8bb30f708c.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711875172_c2013f26b2f0a46d215f4491f422e285.png">
+            </div>
+            <div class="page-chapter">
+                <img class="anh" src="https://up-anh.vi-vn.vn/img/1711875203_2a5634fafc840f17004e24e54ec93510.png">
+            </div>
+        </div>
+        
+
+        <!-- danh sách chap -->
+        <div class="slchap">
+            <h4 style="color: #777676;margin: 10px 0;">&nbsp &nbsp <i class="fa-regular fa-file"></i>&nbsp Danh sách chap
+            </h4>
+            <hr style="background-color:black">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="row-heading">
+                    <div class="col-xs-5 col-lg-8 "><b>Số chương</b>
+                    </div>
+                    <div class="col-xs-4 col-xm-5 col-lg-4">
+                        <h5>Cập nhật</h5>
+                    </div>
+                </div>
+        </div>
+    
+        <nav id="danhsach" class="col-xs-12 col-md-12 col-lg-12">
+            <hr style="background-color:black">
+            <li class="row-heading chap-detail">
+                <!-- số chap -->
+                <div class="col-xs-5 col-lg-8">
+                    <a href="chap01.html" class="text-chap">Chap 1</a>                                
+                </div>
+                <!-- cập nhật -->
+                <div class="col-xs-4 col-xm-5 col-lg-4">
+                    <i class="lam-mo">10 giờ trước</i>
+                </div>
+            </li>
+            <li class="row-heading chap-detail">
+                <!-- số chap -->
+                <div class="col-xs-5 col-lg-8">
+                    <a href="chap/chap02.html" class="text-chap">Chap 2</a>                                
+                </div>
+                <!-- cập nhật -->
+                <div class="col-xs-4 col-xm-5 col-lg-4 ">
+                    <i class="lam-mo">10 giờ trước</i>
+                </div>
+            </li>
+            <li class="row-heading chap-detail">
+                <!-- số chap -->
+                <div class="col-xs-5 col-lg-8">
+                    <a href="chap/chap03.html" class="text-chap">Chap 3</a>                                
+                </div>
+                <!-- cập nhật -->
+                <div class="col-xs-4 col-xm-5 col-lg-4">
+                    <i class="lam-mo">10 giờ trước</i>
+                </div>
+            </li>
+            <li class="row-heading chap-detail">
+                <!-- số chap -->
+                <div class="col-xs-5 col-lg-8">
+                    <a href="chap/chap04.html" class="text-chap">Chap 4</a>                                
+                </div>
+                <!-- cập nhật -->
+                <div class="col-xs-4 col-xm-5 col-lg-4 ">
+                    <i class="lam-mo">10 giờ trước</i>
+                </div>
+            </li>
+            <li class="row-heading chap-detail">
+                <!-- số chap -->
+                <div class="col-xs-5 col-lg-8">
+                    <a href="chap/chap05.html" class="text-chap">Chap 5</a>                                
+                </div>
+                <!-- cập nhật -->
+                <div class="col-xs-4 col-xm-5 col-lg-4">
+                    <i class="lam-mo">10 giờ trước</i>
+                </div>
+            </li>
+            <li class="row-heading chap-detail">
+                <!-- số chap -->
+                <div class="col-xs-5 col-lg-8">
+                    <a href="chap/chap06.html" class="text-chap">Chap 6</a>                                
+                </div>
+                <!-- cập nhật -->
+                <div class="col-xs-4 col-xm-5 col-lg-4 ">
+                    <i class="lam-mo">10 giờ trước</i>
+                </div>
+            </li>
+            <li class="row-heading chap-detail">
+                <!-- số chap -->
+                <div class="col-xs-5 col-lg-8">
+                    <a href="chap/chap07.html" class="text-chap">Chap 7</a>                                
+                </div>
+                <!-- cập nhật -->
+                <div class="col-xs-4 col-xm-5 col-lg-4">
+                    <i class="lam-mo">10 giờ trước</i>
+                </div>
+            </li>
+            <li class="row-heading chap-detail">
+                <!-- số chap -->
+                <div class="col-xs-5 col-lg-8">
+                    <a href="chap/chap08.html" class="text-chap">Chap 8</a>                                
+                </div>
+                <!-- cập nhật -->
+                <div class="col-xs-4 col-xm-5 col-lg-4 ">
+                    <i class="lam-mo">10 giờ trước</i>
+                </div>
+            </li>
+            <li class="row-heading chap-detail">
+                <!-- số chap -->
+                <div class="col-xs-5 col-lg-8">
+                    <a href="chap/chap09.html" class="text-chap">Chap 9</a>                                
+                </div>
+                <!-- cập nhật -->
+                <div class="col-xs-4 col-xm-5 col-lg-4">
+                    <i class="lam-mo">10 giờ trước</i>
+                </div>
+            </li>
+            <li class="row-heading chap-detail">
+                <!-- số chap -->
+                <div class="col-xs-5 col-lg-8">
+                    <a href="chap/chap10.html" class="text-chap">Chap 10</a>                                
+                </div>
+                <!-- cập nhật -->
+                <div class="col-xs-4 col-xm-5 col-lg-4 ">
+                    <i class="lam-mo">10 giờ trước</i>
+                </div>
+            </li>
+            
+        </nav>
+        </div>
+        <!-- /danh sách chap -->
+        <footer>
+            <div class="footer__header">
+                <h4 class="footer__say">Bookstore-Tri thức muôn nơi</h4>
+                <ul class=" footer__information">
+                    <li class="footer__information-item">
+                        <b>Sàn sách trực tuyến quốc gia</b><br>
+                        <b>Bookstore.com</b>
+                        <p>Thuộc bộ thông tin và truyền thông<br>Đơn vị vận hành :Vivi Education</p>
+                    </li>
+                    <li class="footer__information-item">
+                        <a class="footer__information-link" href=""><b>Giới thiệu</b></a><br>
+                        <a class="footer__information-link" href=""><b>Kết nối</b></a> 
+                        <a href="" class="footer__navbar-icon-fb">
+                            <i class="icon fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" class="footer__navbar-icon-Ins">
+                            <i class="icon fa-brands fa-instagram"></i>
+                        </a>
+                        
+                    </li>
+                    <li class="footer__information-item">
+                        <b>Hotline: 0247 300 1369</b><br>
+                        <b>Lượt truy cập: 6.892.340</b>
+                    </li>
+                </ul>
+            </div>
+        </footer> 
+    </div>
+
+    <!-- form đăng ký -->
+    <div class="Dieukhien" id="js-modal">
+        <div class="Dieukhien_overlay"></div>
+        <div class="Dieukhien_body">
+            <!-- Đăng ký còn Đăng nhập thì sửa lại tẹo-->
+            <div class="Dieukhien_from">
+                <from class="Dangky_Dangnhap">
+                    <div class="Dangky_Dangnhap_from">
+                        <h3 class="Dangky_Dangnhap_up">Đăng ký</h3>
+                        <span class="Dangky_Dangnhap_in">Đăng nhập</span>
+                    </div>
+                    <div class="from_nhap">
+                        <input type="text" name="nametxt" id="username" class="Inputtxt" placeholder="Tên đăng nhập*">
+                    </div>
+                    <div class="from_nhap">
+                        <input type="text" name="passwordtxt" id="password" class="Inputtxt"
+                            placeholder="Nhập mật khẩu*">
+                    </div>
+                    <div class="Chinhsach">
+                        <div class="Chinhsach-dk">
+                            <input type="checkbox" name="check" class="check-dk">
+                            Bằng việc đăng kí, bạn đã đồng ý với Bookstore về
+                            <a class="Chinhsach_link" href="">Điều khoản dịch vụ </a>
+                            & <a class="Chinhsach_link" href="">Chính sách bảo mật</a>
+                        </div>
+                    </div>
+                    <div class="Xacnhan">
+                        <input type="button" id="js-back" class="ok" value="Quay lại">
+                        <input type="submit" id="js-confirm" class="ok ok-xacnhan" value="Đồng ý">
+                    </div>
+                </from>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f2e954852d.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+
+
+    <!-- Đề cử -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

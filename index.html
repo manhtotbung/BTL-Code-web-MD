@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store(MD)</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/941970614091145266/1217142992188477460/logo.png?ex=6602f3be&is=65f07ebe&hm=e2adabb337fc71a4c99e23f30a648b69f0d1045d89b02428fb683f15418ca2fe&" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    
+</head>
+
+<body>
+     <div class="app">
+        <header class="header">
+            <div class="grid ">
+                <nav class="header__navbar ">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-iteam "><a class="header__navbar-link" href="index.html">
+                            <i class="fa-solid fa-house"></i> Trang chủ</a>
+                        </li>
+                        <li class="header__navbar-iteam "><a class="header__navbar-link" href="admin/admin_index.html">
+                            <i class="fa-solid fa-user-shield"></i> Quản lý</a>
+                        </li>     
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-link">
+                            <a href="" class="header__navbar-iteam"><i class="fa-solid fa-bell"></i> Thông báo</a>
+                        </li>
+                        <li class="header__navbar-iteam">
+                            <a href="" class="header__navbar-link"><i class="fa-solid fa-circle-question"></i> Trợ giúp</a>
+                        </li>
+                        <li id="register_login" class="header__navbar-iteam header__navbar-iteam--bold">
+                            <a class="header__navbar-link" id="js-Dangky_Dangnhap"><i class="fa-solid fa-right-to-bracket"></i> Đăng ký/Đăng nhập</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__logo_search">
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img class="header__logo-img"
+                            src="BookStore_logo.png">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <input class="header__search--text" type="text" name="Timkiemtxt"
+                            placeholder="Bookstore - Chúng tôi ở đây để phục vụ bạn...">
+                        <button class="header__logo_search-button"><i class="header__logo_search-button-icon fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="header__shopping">
+                        <i class="header__shopping-gio fa-solid fa-cart-shopping fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="grid">
+                <div class="row">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo" data-slide-to="1"></li>
+                          <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://newshop.vn/public/uploads/options/s%C3%A1ch%20v%C4%83n%20h%E1%BB%8Dc%20-%20t%C3%A2m%20l%C3%AD.jpg" alt="Sách" style="width: 100%;">  
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://newshop.vn/public/uploads/options/sachkinhdoanh.jpg" alt="Truyen" style="width: 100%;"> 
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://cdn0.fahasa.com/media/magentothem/banner7/Saigonbooks_Gold_Ver2_Slide_840x320.jpg" alt="GiamGia" style="width: 100%;"> 
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-4 col-xs-2">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header ">
+                                    <h3 class="card-link" data-toggle="collapse" href="#danhmuc">Danh Mục <i class="danh_muc-icon fa-solid fa-caret-down"></i></h3>      
+                                </div>
+                                <div id="danhmuc" class="collapse show" data-parent="#accordion">
+                                    <ul class="Menu__list">
+                                        <li class="Menu__list-item">
+                                            <a class="Menu__list-itemlink" href="">Sách hay nổi bật</a>
+                                        </li>
+                                        <li class="Menu__list-item">
+                                            <a class="Menu__list-itemlink" href="danh_muc_sp.html">Truyện tranh</a>
+                                        </li>
+                                        <li class="Menu__list-item">
+                                            <a class="Menu__list-itemlink" href="">Sách giáo khoa-giáo trình</a>
+                                        </li>
+                                        <li class="Menu__list-item">
+                                            <a class="Menu__list-itemlink" href="">Bách khoa tri thức</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-sm-8 col-12">   
+                        <div class="SP-khung">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                    <div class="SP_item-info">
+                                        <div class="SP_item-info__book">
+                                            <a href="Chi_tiet_sp_hero.html"><img class="SP_item-info-img "
+                                                    src="https://xfs-n10.xfsbb.com/thumb/W600/ampi/ae5/ae5c3d7dccc8a37818d46074b04676da5dcd2679_2644_3713_1769021.jpeg"
+                                                    alt="MD" referrerpolicy="origin"></a>
+                                        </div>
+                                        <div class="SP_item-info-name">
+                                            <a class="SP_item-info-tagName" href="Chi_tiet_sp_miendich.html"
+                                                target="_self">
+                                                <h6 class="item-info-tagName">I'm Kinda Chubby and I'm Your Hero
+                                                </h6>
+                                            </a>
+
+                                        </div>
+                                        <div class="SP_item-info-money">
+                                            <span class="SP_item-info-money-old">499.000₫</span>
+                                            <span class="SP_item-info-money-new">349,000đ</span>
+                                            <span class="SP_item-info-money-sale">-15%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                    <div class="SP_item-info">
+                                        <div class="SP_item-info__book">
+                                            <a href="Chi_tiet_sp_miendich.html"><img class="SP_item-info-img "
+                                                    src="https://m.media-amazon.com/images/I/81FuGhBLSWL._AC_UL480_FMwebp_QL65_.jpg"
+                                                    alt="Immune" referrerpolicy="origin"></a>
+                                        </div>
+                                        <div class="SP_item-info-name">
+                                            <a class="SP_item-info-tagName" href="Chi_tiet_sp_miendich.html"
+                                                target="_self">
+                                                <h6 class="item-info-tagName">Miễn dịch - Du hành thăm hệ thống bí ẩn
+                                                    giữ cho ta sống sót
+                                                </h6>
+                                            </a>
+
+                                        </div>
+                                        <div class="SP_item-info-money">
+                                            <span class="SP_item-info-money-old">499.000₫</span>
+                                            <span class="SP_item-info-money-new">349,000đ</span>
+                                            <span class="SP_item-info-money-sale">-15%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                    <div class="SP_item-info">
+                                        <div class="SP_item-info__book" >
+                                            <a href="Chi_tiet_sp.html"><img class="SP_item-info-img " src="https://cdnnvd.com/nettruyen/thumb/one-piece.jpg" alt="One Piece" referrerpolicy="origin"></a>
+                                        </div>
+                                        <div class="SP_item-info-name">    
+                                            <a class="SP_item-info-tagName" href="Chi_tiet_sp.html" target="_self"><h4 class="item-info-tagName">One piece - Đảo hải tặc</h4></a>
+                                        </div>
+                                        <div class="SP_item-info-money">
+                                            <span class="SP_item-info-money-old">304.950đ</span>
+                                            <span class="SP_item-info-money-new">321.000đ</span>
+                                            <span class="SP_item-info-money-sale">-5%</span>        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                    <div class="SP_item-info">
+                                        <div class="SP_item-info__book">
+                                            <a href="Chi_tiet_sp_jjk.html"><img class="SP_item-info-img"
+                                                src="https://images2.thanhnien.vn/528068263637045248/2023/6/29/chu-thuat-hoi-chien-16880251034671090063527.jpg"
+                                                alt="JJK" referrerpolicy="origin">
+                                            </a>
+                                        </div>
+                                        <div class="SP_item-info-name">
+                                            <a class="SP_item-info-tagName" href="Chi_tiet_sp_jjk.html" target="_self">
+                                                <h4 class="item-info-tagName">Jujutsu Kaisen</h4>
+                                            </a>
+                                        </div>
+                                        <div class="SP_item-info-money">
+                                            <span class="SP_item-info-money-old">247.000₫</span>
+                                            <span class="SP_item-info-money-new">171.295đ</span>
+                                            <span class="SP_item-info-money-sale">-30%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                    <div class="SP_item-info">
+                                        <div class="SP_item-info__book" >
+                                            <img class="SP_item-info-img" src="https://m.media-amazon.com/images/I/71KiyHdrCPL._AC_UY327_FMwebp_QL65_.jpg" alt="TheMagic" referrerpolicy="origin">
+                                        </div>
+                                        <div class="SP_item-info-name">    
+                                            <a class="SP_item-info-tagName" href="Chi_tiet_sp.html" target="_self"><h4 class="item-info-tagName">The Magic - Phép màu</h4></a>
+                                        </div>
+                                        <div class="SP_item-info-money">
+                                            <span class="SP_item-info-money-old">159.000₫</span>
+                                            <span class="SP_item-info-money-new">143.100đ</span>
+                                            <span class="SP_item-info-money-sale">-15%</span>        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                    <div class="SP_item-info">
+                                        <div class="SP_item-info__book">
+                                            <img class="SP_item-info-img"
+                                                src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982147396/transfer-of-power-9781982147396_hr.jpg"
+                                                alt="Transfer_of_power" referrerpolicy="origin">
+                                        </div>
+                                        <div class="SP_item-info-name">
+                                            <a class="SP_item-info-tagName" href="Chi_tiet_sp.html" target="_self">
+                                                <h4 class="item-info-tagName">Tranfer of power </h4>
+                                            </a>
+                                        </div>
+                                        <div class="SP_item-info-money">
+                                            <span class="SP_item-info-money-old">113.400₫</span>
+                                            <span class="SP_item-info-money-new">189.000đ</span>
+                                            <span class="SP_item-info-money-sale">-40%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                    <div class="SP_item-info">
+                                        <div class="SP_item-info__book" >
+                                            <img class="SP_item-info-img" src="https://m.media-amazon.com/images/I/61+HrCrc9qL._AC_UY327_FMwebp_QL65_.jpg" alt="SuImLangCuaBayCuu" referrerpolicy="origin">
+                                        </div>
+                                        <div class="SP_item-info-name">    
+                                            <a class="SP_item-info-tagName" href="Chi_tiet_sp.html" target="_self"><h4 class="item-info-tagName">Sự im lặng của bầy cừu</h4></a>
+                                        </div>
+                                        <div class="SP_item-info-money">
+                                            <span class="SP_item-info-money-old">110.600₫</span>
+                                            <span class="SP_item-info-money-new">158.000đ</span>
+                                            <span class="SP_item-info-money-sale">-30%</span>        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                    <div class="SP_item-info">
+                                        <div class="SP_item-info__book" >
+                                            <img class="SP_item-info-img" src="https://m.media-amazon.com/images/I/91Qcnc0rubL._AC_UY327_FMwebp_QL65_.jpg" alt="Fabled-Beasts-Chronicle" referrerpolicy="origin">
+                                        </div>
+                                        <div class="SP_item-info-name">    
+                                            <a class="SP_item-info-tagName" href="Chi_tiet_sp.html" target="_self"><h4 class="item-info-tagName">Maze Running and other Magical Missions (Fabled Beasts Chronicles)</h4></a>
+                                        </div>
+                                        <div class="SP_item-info-money">
+                                            <span class="SP_item-info-money-old">269.000₫</span>
+                                            <span class="SP_item-info-money-new">196.370đ</span>
+                                            <span class="SP_item-info-money-sale">-27%</span>        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                                    <div class="SP_item-info">
+                                        <div class="SP_item-info__book" >
+                                            <img class="SP_item-info-img" src="https://m.media-amazon.com/images/I/715XqdfgwmL._AC_UY327_FMwebp_QL65_.jpg" alt="Fabled-Beasts-Chronicles" referrerpolicy="origin">
+                                        </div>
+                                        <div class="SP_item-info-name">    
+                                            <a class="SP_item-info-tagName" href="Chi_tiet_sp.html" target="_self"><h4 class="item-info-tagName">First Aid for Fairies and Other Fabled Beasts (Fabled Beasts Chronicles)</h4></a>
+                                        </div>
+                                        <div class="SP_item-info-money">
+                                            <span class="SP_item-info-money-old">230.000₫</span>
+                                            <span class="SP_item-info-money-new">207.000đ</span>
+                                            <span class="SP_item-info-money-sale">-10%</span>        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>  
+        </div>
+        <footer>
+            <div class="footer__header">
+                <h4 class="footer__say">Bookstore-Tri thức muôn nơi</h4>
+                <ul class=" footer__information">
+                    <li class="footer__information-item">
+                        <b>Sàn sách trực tuyến quốc gia</b><br>
+                        <b>Bookstore.com</b>
+                        <p>Thuộc bộ thông tin và truyền thông<br>Đơn vị vận hành :Vivi Education</p>
+                    </li>
+                    <li class="footer__information-item">
+                        <a class="footer__information-link" href=""><b>Giới thiệu</b></a><br>
+                        <a class="footer__information-link" href=""><b>Kết nối</b></a> 
+                        <a href="" class="footer__navbar-icon-fb">
+                            <i class="icon fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" class="footer__navbar-icon-Ins">
+                            <i class="icon fa-brands fa-instagram"></i>
+                        </a>   
+                    </li>
+                    <li class="footer__information-item">
+                        <b>Hotline: 0247 300 1369</b><br>
+                        <b>Lượt truy cập: 6.892.340</b>
+                    </li>
+                </ul>
+            </div>
+        </footer>   
+    
+    </div>
+
+    <!-- form đăng ký -->
+    <div class="Dieukhien" id="js-modal">
+        <div class="Dieukhien_overlay"></div>
+        <div class="Dieukhien_body">
+            <!-- Đăng ký còn Đăng nhập thì sửa lại tẹo-->
+            <div class="Dieukhien_from">
+                <from class="Dangky_Dangnhap">
+                    <div class="Dangky_Dangnhap_from">
+                        <h3 class="Dangky_Dangnhap_up">Đăng ký</h3>
+                        <span class="Dangky_Dangnhap_in">Đăng nhập</span>
+                    </div>
+                    <div class="from_nhap">
+                        <p class="info__from"><i class="fa-regular fa-user"></i> Tên tài khoản</p>
+                        <input type="text" name="nametxt" id="username" class="Inputtxt" placeholder="VD: abc@gmail.com*">
+                    </div>
+                    <div class="from_nhap">
+                        <p class="info__from"><i class="fa-solid fa-lock"></i> Mật khẩu</p>
+                        <input type="text" name="passwordtxt" id="password" class="Inputtxt" placeholder="8 kí tự ít nhất 1 kí tự đặc biệt*">
+                    </div>
+                    <div class="Chinhsach">
+                        <div class="Chinhsach-dk">
+                            <input type="checkbox" name="check" class="check-dk">
+                            Bằng việc đăng kí, bạn đã đồng ý với Bookstore về
+                            <a class="Chinhsach_link" href="">Điều khoản dịch vụ </a>
+                            & <a class="Chinhsach_link" href="">Chính sách bảo mật</a>
+                        </div>
+                    </div>
+                    <div class="Xacnhan">
+                        <input type="button" id="js-back" class="ok" value="Quay lại">
+                        <input type="submit" id="js-confirm" class="ok ok-xacnhan" value="Đăng ký">
+                    </div>
+                </from>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f2e954852d.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+                    
